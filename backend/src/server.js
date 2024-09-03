@@ -1,6 +1,6 @@
 const app = require('./app');
 
-const PORT = 5000; // Porta definida diretamente no código
+const PORT = 5000;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

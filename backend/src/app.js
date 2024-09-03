@@ -5,7 +5,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const exampleRoute = require('./routes/example');
-app.use('/api', exampleRoute);
+const noDataBaseRoute = require('./routes/noDataBaseRoute');
+const userRoutes = require('./routes/users');
+
+app.use('/api', noDataBaseRoute);
+app.use('/api', userRoutes);
 
 module.exports = app;
+
